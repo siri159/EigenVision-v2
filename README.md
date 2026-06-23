@@ -175,22 +175,6 @@ Coming Soon
 
 ---
 
-## 👩‍💻 Author
-
-**Siri Chandana**
-
-AI and Machine Learning Student
-
-Computer Vision Enthusiast
-
-Open Source Contributor
-
-GitHub: https://github.com/siri159
-
-LinkedIn: https://linkedin.com/in/kanneboina-siri-chandana
-
----
-
 ## ⭐ Project Vision
 
 EigenVision demonstrates how classical computer vision techniques can be implemented from first principles and evaluated through rigorous benchmarking. The project serves as both an educational resource and a practical reference for understanding PCA based face recognition systems.

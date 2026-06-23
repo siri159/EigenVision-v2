@@ -1,0 +1,170 @@
+.methodology {
+  padding: 96px 0;
+}
+
+.methodology__layout {
+  display: grid;
+  grid-template-columns: 280px 1fr;
+  gap: 24px;
+  align-items: start;
+}
+
+.methodology__steps {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  position: sticky;
+  top: 80px;
+}
+
+.methodology__step-btn {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 12px 14px;
+  border-radius: var(--radius-md);
+  background: none;
+  border: 1px solid transparent;
+  cursor: pointer;
+  text-align: left;
+  font-family: var(--font-sans);
+  transition: all 0.2s;
+  position: relative;
+}
+
+.methodology__step-btn:hover {
+  background: var(--bg-card);
+  border-color: var(--border);
+}
+
+.methodology__step-btn--active {
+  background: var(--bg-card) !important;
+  border-color: var(--accent-orange-border) !important;
+}
+
+.methodology__step-btn--highlight .methodology__step-num {
+  color: var(--accent-orange);
+}
+
+.methodology__step-num {
+  font-size: 11px;
+  font-weight: 500;
+  color: var(--text-muted);
+  min-width: 24px;
+}
+
+.methodology__step-btn--active .methodology__step-num {
+  color: var(--accent-orange);
+}
+
+.methodology__step-title {
+  font-size: 13px;
+  font-weight: 500;
+  color: var(--text-secondary);
+  flex: 1;
+  transition: color 0.2s;
+}
+
+.methodology__step-btn--active .methodology__step-title {
+  color: var(--text-primary);
+}
+
+.methodology__step-badge {
+  font-size: 10px;
+  font-weight: 600;
+  color: var(--accent-orange);
+  background: var(--accent-orange-glow);
+  border: 1px solid var(--accent-orange-border);
+  padding: 2px 6px;
+  border-radius: 4px;
+  font-family: var(--font-mono);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.methodology__detail {
+  min-height: 400px;
+}
+
+.methodology__detail-header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 16px;
+  flex-wrap: wrap;
+}
+
+.methodology__detail-num {
+  font-size: 13px;
+  color: var(--accent-orange);
+  font-weight: 500;
+}
+
+.methodology__detail-title {
+  font-size: 20px;
+  font-weight: 600;
+  color: var(--text-primary);
+  letter-spacing: -0.01em;
+  flex: 1;
+}
+
+.methodology__detail-desc {
+  font-size: 14px;
+  line-height: 1.75;
+  color: var(--text-secondary);
+  margin-bottom: 24px;
+}
+
+.methodology__code-block {
+  background: #050510;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-md);
+  overflow: hidden;
+}
+
+.methodology__code-header {
+  padding: 8px 16px;
+  border-bottom: 1px solid var(--border);
+  background: rgba(255, 255, 255, 0.02);
+}
+
+.methodology__code-header .mono {
+  font-size: 11px;
+  color: var(--text-muted);
+  font-weight: 500;
+}
+
+.methodology__code {
+  padding: 20px;
+  font-family: var(--font-mono);
+  font-size: 12.5px;
+  line-height: 1.75;
+  color: #c8c8e8;
+  overflow-x: auto;
+  white-space: pre;
+  -webkit-overflow-scrolling: touch;
+}
+
+.methodology__code code {
+  font-family: inherit;
+}
+
+@media (max-width: 900px) {
+  .methodology__layout {
+    grid-template-columns: 1fr;
+  }
+  .methodology__steps {
+    position: static;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .methodology__step-btn {
+    flex: 0 1 auto;
+  }
+  .methodology__step-title {
+    display: none;
+  }
+  .methodology__step-num {
+    font-size: 13px;
+  }
+}
